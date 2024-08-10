@@ -2,9 +2,8 @@ import axios from "axios"
 import { emailVerifyFailure, emailVerifyStart, emailVerifySuccess, signInFailure, signInStart, signInSuccess } from "./slices/userSlice";
 import toast from "react-hot-toast";
 
-const API_URL = import.meta.env.MODE = "developement" ? "http://localhost:3000/api" : null
+const API_URL = import.meta.env.MODE = "developement" ? "http://localhost:3000/api" : "/api"
 
-axios.defaults.withCredentials = true;
 
 
 export const signup = async (data, dispatch, navigate) => {
