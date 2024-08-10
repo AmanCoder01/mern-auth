@@ -13,10 +13,6 @@ app.use(cors({ origin: "http://localhost:5173", credentials: true }));
 app.use(express.json()); //allow us to parse req.body
 
 
-app.get("/", (req, res) => {
-    res.send("Hello World");
-})
-
 app.use("/api/auth", authRoutes);
 
 if (process.env.NODE_ENV === "production") {
