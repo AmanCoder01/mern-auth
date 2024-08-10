@@ -3,9 +3,9 @@ import { useSelector } from 'react-redux';
 
 export const Home = () => {
 
-    const { currentUser } = useSelector(state => state.user);
+    // const { currentUser } = useSelector(state => state.user);
 
-    console.log(currentUser);
+    // console.log(currentUser);
 
     return (
         <div>Home</div>
